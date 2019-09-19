@@ -1,0 +1,99 @@
+/*
+button {
+	color: white;
+	background-color: black;
+	padding: 20pt 60pt;
+	font-size: 20pt;
+}
+*/
+.wrapper {
+	text-align: center;
+	padding-top: 10pt;
+}
+.logo {
+	width: 15%;
+	margin-left: 0;
+	padding: 10px 0;
+}
+.skema {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	padding-top: 10pt;
+}
+
+body {
+	margin: 0;
+	background: white;
+	font-weight: 300;
+}
+
+header {
+	background: #000000;
+	margin-top: 0 auto;
+}
+
+header::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+/*list items basic positioning*/
+nav {
+	float: right;
+}
+
+/*further positioning and formatting of list items*/
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/*positioning of list items*/
+nav li {
+	display: inline-block;
+	margin-left: 70pt;
+	padding-top: 43pt;
+	
+	position: relative;
+}
+
+/*formatting of text in list items*/
+nav a {
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14pt;
+}
+
+/*color of text when mouse hover*/
+nav a:hover {
+	color: #8C8C8C;
+}
+
+/*slide bar on top of list items*/
+nav a::before {
+	content: '';
+	display: block;
+	height:5pt;
+	background-color: #8C8C8C;
+	
+	position: absolute;
+	top: 0;
+	width: 0%;
+	
+	transition: all ease-in-out 200ms;
+}
+
+/*slide function*/
+nav a:hover::before {
+	width: 100%;
+}
