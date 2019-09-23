@@ -22,9 +22,9 @@
 		<ul>
 			<li><a href="dagsplan.html">Dagsplan</a></li>
 			<li><a href="lokaler.html">Lokaler</a></li>
+			<!-- 
 			<li><a href="#">Lys</a></li>
 			<li><a href="#">Indeklima</a></li>
-			<!-- 
 			<li><a href="#">Contact</a></li>
 			-->
 		</ul>
@@ -41,15 +41,11 @@
 		<div id="bleId">DeviceId:</div>
 		<div id="debugDiv"></div>
 		<br>
-		<button id="ledOnButton" onclick = "data('f'); sendData();">Lock Door</button>
+		<button id="ledOnButton" onclick = "data('102'); sendData();">Lock Door</button>
 		<br><br>
-		<button id="ledOffButton" onclick = "data('e'); sendData();" onclick="sendData">Unlock Door</button>
+		<button id="ledOffButton" onclick = "data('101'); sendData();" onclick="sendData">Unlock Door</button>
 		<br><br><br>
 		<input type="hidden" id="messageInput" value="Hello"/>
-		<!--
-		<br>
-		<button id="sendButton" onclick = "sendData()">Send</button>
-		-->
 		
 		
 		
