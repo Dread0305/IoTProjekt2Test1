@@ -91,11 +91,28 @@ function onConnError(){
 	document.getElementById("receiveDiv").innerHTML =  "Received: " + bytesToString(data) + "<br/>";
 }
 
+//--------------------------------------------------------------
+
+function leddata(txt) {
+	textInput.value = txt;
+}
+
+function sendLedData() { // send LED data to Arduino
+	 var data = stringToBytes(textInput.value);
+	ble.writeWithoutResponse(ConnDeviceId, blue.serviceUUID, blue.txCharacteristic, data, onSend, onError);
+}
+
+function updateTextInput(val) {
+          document.getElementById('textInput').value=val; 
+        }
+
+//----------------------------------------------------------------
+
 function data(txt){
 	messageInput.value = txt;
 }	
 
-function sendData() { // send data to Arduino
+function sendData() { // send Lock data to Arduino
 	 var data = stringToBytes(messageInput.value);
 	ble.writeWithoutResponse(ConnDeviceId, blue.serviceUUID, blue.txCharacteristic, data, onSend, onError);
 }
@@ -115,4 +132,11 @@ function onError(reason)  {
 	alert("ERROR: " + reason); // real apps should use notification.alert
 }
 
-	
+
+
+
+
+
+
+
+

@@ -41,15 +41,27 @@
 		<div id="bleId">DeviceId:</div>
 		<div id="debugDiv"></div>
 		<br>
-		<button id="ledOnButton" onclick = "data('1'); sendData();">Lock Door</button>
+		<button id="ledOnButton" onclick = "data('102'); sendData();">Lock Door</button>
 		<br><br>
-		<button id="ledOffButton" onclick = "data('0'); sendData();" onclick="sendData">Unlock Door</button>
+		<button id="ledOffButton" onclick = "data('101'); sendData();" onclick="sendData">Unlock Door</button>
 		<br><br><br>
 		<input type="hidden" id="messageInput" value="Hello"/>
 		<!--
 		<br>
 		<button id="sendButton" onclick = "sendData()">Send</button>
 		-->
+		
+		
+		
+		
+<div class="slidecontainer">
+	<input type="range" name="rangeInput" min="1" max="100" value="50" class="slider" onchange="updateTextInput(this.value);">
+	<br>
+	<br>
+	Lysstyrke:
+	<input type="text" id="textInput" value="" style="border:none">
+</div>
+
 	
 </div>
 
