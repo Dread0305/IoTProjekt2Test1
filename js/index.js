@@ -98,7 +98,7 @@ function leddata(txt) {
 }
 
 function sendLedData() { // send LED data to Arduino
-	 var data = stringToBytes("l1" + textInput.value);
+	 var data = stringToBytes("l" + textInput.value);
 	ble.writeWithoutResponse(ConnDeviceId, blue.serviceUUID, blue.txCharacteristic, data, onSend, onError);
 }
 
