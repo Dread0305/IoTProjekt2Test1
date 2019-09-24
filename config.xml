@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget 
-	id="dk.kea.bluefruit-20-temptest" 
+	id="dk.kea.bluefruit-21-temptest" 
 	version="0.0.1" 
 	xmlns="http://www.w3.org/ns/widgets" 
 	xmlns:cdv="http://cordova.apache.org/ns/1.0">
 
-    <name>Bluifruit-20-temptest</name>
+    <name>Bluifruit-21-temptest</name>
     <description>
         A sample app from a phone  BLE hardware.
     </description>
