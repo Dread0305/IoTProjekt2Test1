@@ -1,11 +1,3 @@
-/*
-button {
-	color: white;
-	background-color: black;
-	padding: 20pt 60pt;
-	font-size: 20pt;
-}
-*/
 .wrapper {
 	text-align: center;
 	padding-top: 10pt;
@@ -21,6 +13,11 @@ button {
 	margin-right: auto;
 	display: block;
 	padding-top: 10pt;
+}
+
+p {
+	font-size: 14pt;
+	font-style: bold;
 }
 
 body {
@@ -48,6 +45,7 @@ header::after {
 /*list items basic positioning*/
 nav {
 	float: right;
+	
 }
 
 /*further positioning and formatting of list items*/
@@ -61,7 +59,7 @@ nav ul {
 nav li {
 	display: inline-block;
 	margin-left: 70pt;
-	padding-top: 43pt;
+	padding-top: 40pt;
 	
 	position: relative;
 }
@@ -79,7 +77,7 @@ nav a:hover {
 	color: #8C8C8C;
 }
 
-/*slide bar on top of list items*/
+/*sliding bar on top of list items*/
 nav a::before {
 	content: '';
 	display: block;
@@ -93,7 +91,7 @@ nav a::before {
 	transition: all ease-in-out 200ms;
 }
 
-/*slide function*/
+/*sliding function*/
 nav a:hover::before {
 	width: 100%;
 }
@@ -105,9 +103,21 @@ nav a:hover::before {
 	
 }
 
+.btn {
+	background: black;
+	color: white;
+	
+	outline: 2px solid black;
+	outline-offset: -2px;
+	transition: all ease-in-out 100ms;
+}
 
-
-
+.btn:hover {
+	color: #8C8C8C;
+	
+	outline: 2px solid black;
+	outline-offset: 1.5px;
+}
 
 
 

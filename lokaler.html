@@ -35,15 +35,15 @@
 <div class="wrapper">
 
 	<ul id="bleDeviceList"> </ul>  
-	<button id="refreshButton" onClick = "refreshDeviceList()">Refresh</button>
+	<button id="refreshButton" class="btn" onClick = "refreshDeviceList()">Refresh</button>
 	<br><br>
 	<div id="statusDiv">Status: Disconnected</div>
 		<div id="bleId">DeviceId:</div>
 		<div id="debugDiv"></div>
 		<br>
-		<button id="ledOnButton" onclick = "data('d1'); sendData();">Lock Door</button>
+		<button id="ledOnButton" class="btn" onclick = "data('d1'); sendData();">Lock Door</button>
 		<br><br>
-		<button id="ledOffButton" onclick = "data('d0'); sendData();" onclick="sendData">Unlock Door</button>
+		<button id="ledOffButton" class="btn" onclick = "data('d0'); sendData();" onclick="sendData">Unlock Door</button>
 		<br><br><br>
 		<input type="hidden" id="messageInput" value="Hello"/>
 		
@@ -58,6 +58,8 @@
 	<br><br>
 	<!--<button id="ledOK" onclick="sendLedData()">Send Lysstyrke</button>-->
 </div>
+<br><br>
+<div id="receiveDiv">Temperatur: </div>
 
 	
 </div>
