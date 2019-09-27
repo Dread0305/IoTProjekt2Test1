@@ -103,6 +103,7 @@ nav a:hover::before {
 	
 }
 
+/*Button styling function*/
 .btn {
 	background: black;
 	color: white;
@@ -112,6 +113,7 @@ nav a:hover::before {
 	transition: all ease-in-out 100ms;
 }
 
+/*Button styling and function when mouse hover*/
 .btn:hover {
 	color: #8C8C8C;
 	
@@ -120,7 +122,7 @@ nav a:hover::before {
 }
 
 
-
+/*Light control slide bar*/
 .slidecontainer {
 	width: 35%;
 	display: inline-block;
@@ -138,6 +140,7 @@ nav a:hover::before {
   transition: opacity .2s;
 }
 
+/*Light control slider bar thumb/button*/
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;

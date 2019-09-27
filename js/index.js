@@ -1,7 +1,6 @@
 // Based on an example:
 //https://github.com/don/cordova-plugin-ble-central
 
-
 // ASCII only
 function bytesToString(buffer) {
     return String.fromCharCode.apply(null, new Uint8Array(buffer));
@@ -15,12 +14,6 @@ function stringToBytes(string) {
     }
     return array.buffer;
 }
-
-// this is ble hm-10 UART service
-/*var blue= {
-    serviceUUID: "0000FFE0-0000-1000-8000-00805F9B34FB",
-    characteristicUUID: "0000FFE1-0000-1000-8000-00805F9B34FB"
-};*/
 
 //the bluefruit UART Service
 var blue ={
@@ -41,7 +34,6 @@ function onDeviceReady(){
 	refreshDeviceList();
 }
 
-	 
 function refreshDeviceList(){
 	//deviceList =[];
 	document.getElementById("bleDeviceList").innerHTML = ''; // empties the list
@@ -53,7 +45,6 @@ function refreshDeviceList(){
 	}
 }
 
-
 function onDiscoverDevice(device){
 	//Make a list in html and show devises
 		if(device.name == "Lokale 1"){      //indsæt evt. en if-sætning, så kun egen bluifruit modul sættes på listen
@@ -63,7 +54,6 @@ function onDiscoverDevice(device){
 		document.getElementById("bleDeviceList").appendChild(listItem);
 		} //slut tuborgparentes til mulig if-sætning
 }
-
 
 function conn(){
 	var  deviceTouch= event.srcElement.innerHTML;
@@ -91,8 +81,6 @@ function onConnError(){
 	document.getElementById("receiveDiv").innerHTML =  "Temperatur: " + bytesToString(data) + "°" + "<br/>";
 }
 
-//--------------------------------------------------------------
-
 function leddata(txt) {
 	textInput.value = txt;
 }
@@ -105,8 +93,6 @@ function sendLedData() { // send LED data to Arduino
 function updateTextInput(val) {
           document.getElementById('textInput').value=val; 
         }
-
-//----------------------------------------------------------------
 
 function data(txt){
 	messageInput.value = txt;

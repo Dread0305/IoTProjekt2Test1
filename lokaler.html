@@ -41,9 +41,9 @@
 		<div id="bleId">DeviceId:</div>
 		<div id="debugDiv"></div>
 		<br>
-		<button id="ledOnButton" class="btn" onclick = "data('d1'); sendData();">Lock Door</button>
+		<button id="doorLockButton" class="btn" onclick = "data('d1'); sendData();">Lock Door</button>
 		<br><br>
-		<button id="ledOffButton" class="btn" onclick = "data('d0'); sendData();" onclick="sendData">Unlock Door</button>
+		<button id="doorUnlockButton" class="btn" onclick = "data('d0'); sendData();" onclick="sendData">Unlock Door</button>
 		<br><br><br>
 		<input type="hidden" id="messageInput" value="Hello"/>
 		
@@ -55,8 +55,7 @@
 	<br><br>
 	Lysstyrke:
 	<input type="text" id="textInput" value="" style="border:none">
-	<br><br>
-	<!--<button id="ledOK" onclick="sendLedData()">Send Lysstyrke</button>-->
+	<br>
 </div>
 <br><br>
 <div id="receiveDiv"></div>
